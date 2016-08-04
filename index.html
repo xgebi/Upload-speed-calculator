@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>How long until it’s uploaded?</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <main>
+        <h1>How long until it’s uploaded?</h1>
+        <form>
+          <p>
+          <label for="upload-speed-value">Upload speed:</label><br />
+          <input type="number" id="upload-speed-value" /><label for="upload-speed-unit" class="hidden" aria-hidden="false">Upload unit:</label>
+          <select id="upload-speed-unit">
+            <option value="bps">bps</option>
+            <option value="kbps">kbps</option>
+            <option value="Mbps" selected="true">Mbps</option>
+          </select>
+        </p>
+        <p>
+        <label for="upload-size-value">Upload size:</label><br />
+        <input type="number" id="upload-size-value" /><label for="upload-size-unit" class="hidden" aria-hidden="false">Size unit:</label>
+        <select id="upload-size-unit">
+          <option value="B">B</option>
+          <option value="kB">kB</option>
+          <option value="MB" selected="true">MB</option>
+          <option value="GB">GB</option>
+          <option value="TB">TB</option>
+        </select>
+      </p>
+      <button onclick="compute();" type="button">Calculate</button>
+        </form>
+      <p id="results">
+        Here you will see the results
+      </p>
+      <footer>
+        Mini project by <a href="https://www.sarahgebauer.com">Sarah Gebauer</a>, August 4, 2016
+      </footer>
+    </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>
